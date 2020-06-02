@@ -1,0 +1,71 @@
+{
+  "name": "v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "core-js": "^2.6.5",
+    "express": "^4.17.1",
+    "firebase": "^6.2.4",
+    "jquery": "^3.5.0",
+    "vue": "^2.6.10",
+    "vue-json-excel": "^0.2.98",
+    "vue-papa-parse": "1.1.1",
+    "vue-router": "^3.0.3",
+    "vue-tables-2": "^1.4.70",
+    "vuefire": "^2.0.0-alpha.24",
+    "vuetable-2": "^2.0.0-beta.4",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "prerender-spa-plugin": "^3.4.0",
+    "vue-loader": "^15.6.4",
+    "vue-template-compiler": "^2.6.7",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
