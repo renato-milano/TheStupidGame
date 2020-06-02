@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <div class="banner" style="float:left;margin-left: 20px;margin-right: 20px">  
-    <h1 style="color:red">THE STUPID GAME</h1>
-    <h2>Select a color:</h2>
+    
+     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div class="banner" id="banner" style="float:left;margin-left: 15px;margin-right: 15px">  
+      <h1 style="color:red">THE STUPID GAME</h1>
+      <h2>Select a color:</h2>
     <input type="radio" id="ColorParty" name="gender" value="ColorParty">
     <label for="male">ColorParty</label><br>
     <input type="radio" id="SuperColorParty" name="gender" value="SuperColorParty">
@@ -23,13 +43,6 @@
 <p class="reference">Powered by <span style="color:red;font-size: 20px;"><a href="https://github.com/renato-milano" >Renato Milano</span></a></p>
   <h2 id="pointShower">Points: 0</h2>
 </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-
-  </head>
-  <body>
     <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
 <style>
 body {
@@ -43,6 +56,8 @@ a{
 }
 </style>
     <script src="sketch.js"></script>
+    
+    <script src="store.js"></script>
     <script src="food.js"></script>
   </body>
 </html>
