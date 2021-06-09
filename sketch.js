@@ -118,7 +118,7 @@ function mouseStopped(){                                 // the actual function 
     }
 */
 
-background(220);
+background(255);
 
 if(true){
     var max=0.5;
